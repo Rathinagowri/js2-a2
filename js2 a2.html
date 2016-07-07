@@ -1,0 +1,20 @@
+<script>
+function m(x) {
+  
+  var mul = x 
+  
+  function s(y) {
+    mul = mul*y
+    return s
+  }
+   s.toString = function() { return mul }
+  
+  return s
+ 
+}
+
+alert( m(1)(2) );  
+alert( m(5)(5)(6));  
+alert( m(1)(1)(1)(1));  
+
+</script>
